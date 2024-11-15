@@ -5,8 +5,9 @@ metadata:
   namespace: argocd
 spec:
   destination:
+    name: ''
     namespace: dev
-    name: kind
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: helm-umbrella-chart
